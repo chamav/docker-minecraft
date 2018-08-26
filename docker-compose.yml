@@ -1,0 +1,20 @@
+version: '3.6'
+
+services:
+
+### Workspace Utilities Container ###########################
+
+    minecraft:
+        image: itzg/minecraft-server
+        volumes:
+            - ./data/minecraft:/data
+        tty: true
+        environment:
+            - EULA=TRUE
+        restart: always
+        ports:
+            - "25565:25565"
+
+
+
+### Add more Containers below ###############################
