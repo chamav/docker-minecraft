@@ -13,9 +13,16 @@ services:
             - EULA=TRUE
             - OPS=${OPS}
             - WHITELIST=${WHITELIST}
+            - ENABLE_RCON=true
+            - RCON_PASSWORD=${RCON_PASSWORD}
+            - ANNOUNCE_PLAYER_ACHIEVEMENTS=true
+            - PVP=false
         restart: always
+        container_name: mc
+        stdin_open: true
         ports:
             - "25565:25565"
+            - "25575:25575"
 
 
 
