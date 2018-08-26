@@ -16,7 +16,7 @@ services:
             - ENABLE_RCON=true
             - RCON_PASSWORD=${RCON_PASSWORD}
             - ANNOUNCE_PLAYER_ACHIEVEMENTS=true
-            - PVP=false
+            - PVP=false
         restart: always
         container_name: mc
         stdin_open: true
