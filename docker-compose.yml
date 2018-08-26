@@ -11,6 +11,8 @@ services:
         tty: true
         environment:
             - EULA=TRUE
+            - OPS=${OPS}
+            - WHITELIST=${WHITELIST}
         restart: always
         ports:
             - "25565:25565"
